@@ -1,0 +1,162 @@
+\documentclass[16pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\textheight 8.5in
+\textwidth 6 in
+\oddsidemargin 0.25in
+\topmargin 0in
+\newcommand{\pmam}{{\sc pm}}
+\newcommand{\ampm}{{\sc am}}
+\def\qed{\hfill {\hbox{${\vcenter{\vbox{               %HOLLOW SQUARE
+						\hrule height 0.4pt\hbox{\vrule width 0.4pt height 6pt
+							\kern5pt\vrule width 0.4pt}\hrule height 0.4pt}}}$}}}
+
+\usepackage{titlesec}
+%\titleformat{\subsubsection}[runin]{}{}{}{}[]
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{}{}{}[]
+\titlespacing*{\subsubsection}{15pt}{0pt}{6pt}
+
+\date{}
+\title{\vspace{-1.5cm}DATA 5322 Statistical Machine Learning II \\ Spring Quarter 2024 }
+
+\begin{document}
+	
+	\maketitle
+	
+	\vspace{-1.5cm}
+	
+	\begin{minipage}[t]{0.37\linewidth}
+		\textbf{Professor's Information:}\\
+		{\sc Dr. Ariana Mendible}\\ %Associate Professor \& Mathematics Department Chair \\
+		Pronouns: she/her/hers\\
+		Email: mendible@seattleu.edu\\
+		Phone: (206) 296-5864\\
+		Office: BANN 428
+	\end{minipage}
+	\hfill 
+	\begin{minipage}[t]{0.43\linewidth}
+		\textbf{Course Information:} \\
+		Credits: 3 \\
+		Location: LEML 122 (Boeing Room) \\
+		Lecture: Monday 6:00-8:40 {\sc pm} \\
+		Office Hours: TBD by survey\\ and by appointment
+	\end{minipage}
+	
+	\subsection*{Course Description}
+	This course expands upon Statistical Learning I to introduce a number of additional common tools in statistical and machine learning beyond the linear modeling framework. Students will learn classification methods. Standard approaches to model regularization and dimension reduction will be covered. Students will also be introduced to unsupervised learning/clustering methods. 
+	
+	\subsubsection*{Prerequisites}
+	DATA 5321 - Statistical Machine Learning I
+	\subsubsection*{Textbook}
+	An Introduction to Statistical Learning with Applications in Python/R, by James, Witten, Hastie, \& Tibshirani. \href{https://www.statlearning.com/}{Available for free online}.
+	\subsubsection*{Course Topics} Tree-based methods, support vector machines, neural networks, regularization and dimension reduction, unsupervised learning
+	
+	
+	
+	\subsection*{Learning Outcomes}
+	
+	On successful completion of this course (i.e. by passing this course), you will 
+	\begin{enumerate}
+		\setlength{\itemsep}{-1pt}
+		\item	Be able to use machine learning techniques in the context of data science methodology;
+		\item	Apply statistical models, tree-based models, support vector machines, and unsupervised learning models;
+		\item	Develop models with parameter regularization and dimension reduction;
+		\item	Select an appropriate model for a problem, including understanding the differences between models based on categorical versus numerical responses;
+		\item	Assess the performance of a statistical model;
+		\item	Recognize when unsupervised methods are an appropriate modeling tool.
+	\end{enumerate}
+	
+	\subsection*{Program Learning Outcomes Addressed }
+	
+	(1)	Apply appropriate analytical and computational methods to solve real-world problems effectively.
+	(2)	Communicate technical information effectively to a specific audience via speech, writing, and data visualization.
+	(3)	Exhibit constructive and inclusive collaboration and teamwork skills.
+	
+	
+	\subsection*{Graduate Learning Outcomes Addressed}
+	
+	(1)	Demonstrate mastery of competencies required in their profession or field.
+	(2)	Demonstrate effective communication in speech and in writing.
+	(3)	Exhibit professional integrity, ethical leadership, and effective collaboration skills.
+	(4)	Recognize and address moral and ethical challenges within their professions as informed by the Jesuit Catholic tradition.
+	(5)	Develop a professional perspective focused on life-long learning that is informed by the knowledge and skills of their graduate education.
+	\section*{Evaluation and Assignments}	
+	This course is designed to train students in practical applications for careers in data science. To that end, students will be evaluated on a mix of computational and communication skills. There will be no timed exams. Active participation in class is expected and will be evaluated regularly. 
+	
+	\subsection*{Weekly Worksheets (20\%)}  Each class day, a exploratory worksheet will be posted on Canvas. Students will work together in class to explore the topic at hand. After class, students will complete outstanding work, polish the documents with clean code, verbal answers to response questions, plots/outputs, and comments, and will submit the work on Canvas. The goal of these assignments is to provide low-stakes feedback on learning and ensure timely course participation. They are due by the start of the next class period, typically one week out. These will be graded for completion and effort. No late submisisons will be accepted. At the end of the quarter, the lowest worksheet grade will be dropped. 
+	
+	\subsection*{Written Homework (50\%)} Written homework will be assigned with each textbook chapter, approximately every 2 weeks, and will explore the full data science methodology of collecting, processing, and analyzing data as well as communicating results. Typically, these assignments will be exploratory and are meant to reflect real-world problems. They are built for students to showcase mastery of course content, but will be based on real data and may require additional resources, data cleaning, or other tools that are not directly presented in class.\textbf{ As such, it is expected that these assignments will take longer to complete.} Each written homework will have two deliverables: (1) your code and (2) a written report of your work. The reports should be written to explain the concept/theory, your methodology, and your findings. They should be professional and polished and will be graded on the presentation and communication (neat, complete, clear language, sufficient plots that are correctly labeled and discussed, etc). Expectations for written communication are high-- students can seek extra support at the \href{https://www.seattleu.edu/writingcenter/}{Writing Center} and the \href{https://www.seattleu.edu/ellc/ellc-tutoring/}{English-Language Learning Center}. A report format template, example report, and grading rubric will be posted on Canvas to give students a clear idea of what this should look like. Written homework will be due one week after it is assigned. Revisions are encouraged and will be due one week after feedback is recieved. 
+	
+%	\begin{enumerate}
+%		\setlength{\itemsep}{-1pt}
+%		\item[] \textbf{Title and Abstract:} A descriptive title and short (100 word) abstract
+%		\item[]\textbf{Intro and Overview:} Setting the goals of the report and introducing the topics/methods
+%		\item[]\textbf{Theoretical Background:} A summary of the theory behind the concept you will use (does not need to be too detailed/rigorous), description of when and how the method is used generally
+%		\item[]\textbf{Methodology:} A description of the data itself, processing, and algorithm development
+%		\item[]\textbf{Comutational Results:} Presentation and explanaiton of your computational results (plots!), causes and potential solutions to errors/anomalies
+%		\item[] \textbf{Summary and Conclusions:} Summary of the report, discussion of improvements to and broader impacts of your findings
+%		\item[] \textbf{Appendix: Pseudocode} Packages/functions used and brief explanaiton of code architecture  
+%	\end{enumerate}
+
+	
+	\subsection*{Summary Map (5\%)}
+	Upon completing this course, students will have learned a variety of methods and approaches to machine learning, each with accompanying advantages and disadvantages, appropriate uses, and parameter choices. In order to synthesize the information from this course (and Statistical Machine Learning I), students will develop a summary document of this information. This should be worked on throughout the quarter to synthesize knowledge at the end of a module. It will also serve as a quarter-end study guide and as a reference for the future (preparing for job interviews, for example). 
+	
+	\subsection*{Final Project (25\%)}
+	Students will work in small groups (3-4) to create and solve a data science problem of their choosing. It should showcase their knowledge of machine learning concepts and solve a problem that is compelling to the group. The final project will be presented in advance of course completion so that students have ample time to find a topic, gather data, complete the project, and prepare their deliverables. Deliverables for this project are (1) a written report, more in-depth but in a similar format to homeworks, and (2) an oral presentation. During finals week, groups will give a ~10-15 minute presentation to the class and community about their topic of study. All group members are expected to participate equally in all aspects of the project. Exceptions for illness or other extenuating circumstances should be communicated and will be accommodated as best as possible.
+	
+%	
+%	\subsection*{Health and Safety} It is expected that all students will comply with university policy regarding health and safety. Officially, Seattle University has lifted its requirement of Safe Start health screening and indoor masking. However, many members of our community are still vulnerable. I personally encourage and would prefer the continued use of masks and consideration of ones impact on the health of our community members. If any of these policies change as circumstances change, students will be notified in a timely manner. 
+	
+	%	\subsection*{Office Hours}
+	%	Office hours are your opportunity to meet with me outside of class one-on-one or in small groups to discuss the course, your learning, plans for the future, or just to check in. Office hours will be held on \textbf{Tuesday 3:00--5:00 pm and by appointment.}
+	
+	%	\subsection*{Late Policy}
+	%	My goal is to be as flexible as possible with your changing needs. If you need an extension on an assignment or have extenuating circumstances, \textbf{let me know} 24 hours in advance of a due date and your request will be strongly considered. In the interest of maintaining the pace of  the course and allowing all students the opportunity to study from solutions, unexcused late work will not be accepted and will receive no credit. \textbf{This is to say: just communicate with me}. 
+	
+	\subsection*{Classroom Norms}
+	It is expected that all students participate fully in class activities. This includes arriving in class on time, actively engaging with others during group work, and sharing ideas and questions openly. My foremost goal is student learning. If there is anything I can do to better facilitate your learning  (e.g. assignment extensions, extra help, changing some of the course structure), please feel free to let me know. 
+	
+	\subsection*{Academic Integrity} 
+	While working together outside of class and using a variety of resources is \textbf{strongly encouraged}, it is considered cheating to simply rephrase work generated by another student or outside resource. Students are encouraged to learn from one another and all of the other resources you have at your disposal, but work that is handed in must ultimately reflect a student's own understanding of the course material. Cheating and plagiarism are defined in the \href{https://www.seattleu.edu/media/redhawk-service-center/registrar/registrar-policies/Academic-Integrity-2011-03-Interim-Update-3.24.23.pdf}{Academic Integrity Policy}. If the professor suspects that a student has cheated or plagiarized, she will follow the procedures outlined in the University's policy. In cases of cheating or plagiarism, the assignment or exam will receive a zero and this score will be included in the student's final grade for the course. Seattle University's Academic Integrity Tutorial can be found \href{https://www.seattleu.edu/academic-integrity/resources-for-students/}{here}.
+	
+%	
+%	\subsubsection*{Community and Inclusivity}
+%	
+%	Seattle University and the Department of Mathematics are committed to creating and sustaining an inclusive culture that values diversity and works for equity in opportunity and outcomes. Diversity is a core value we espouse as part of our mission.  We respect our students' identities and we strive to create a learning environment where every student feels welcomed and valued. We ask for your help in fostering a welcoming and open environment, treating others with respect, and collaborating toward equity. Please refer to the \href{https://www.seattleu.edu/media/dean-of-students/files/policies/Code-of-Student-Conduct.pdf}{Student Code of Conduct} and to the \href{https://www.seattleu.edu/diversity/}{Office for Diversity and Inclusion} for more information and guidance. 
+%	 If you personally experience bias, harassment or discrimination, or witness any of these, you are encouraged to reach out to your instructor, your advisor, the Mathematics Department office, the \href{https://www.seattleu.edu/scieng/advising/staff/}{College Advising Center}, Diversity, Equity, and Inclusion Student Ambassadors (Instagram: su\_stemdei), or any of the resources listed on the \href{https://www.seattleu.edu/diversity/resources/}{SU Diversity and Inclusion resources page} including the \href{https://www.seattleu.edu/equity/reporting/}{Office of Institutional Equity}.
+%	\subsubsection*{Office of Institutional Equity:} Seattle University students who have concerns of discrimination, harassment, sexual misconduct, or related retaliation, are encouraged to contact the Office of Institutional Equity (OIE) or one of the other options listed on the \href{https://www.seattleu.edu/equity/reporting/}{OIE's website}.
+	
+	\subsection*{General Course and University Policies}
+	
+	\subsubsection*{Support for Students with Disabilities:} If a student has, or think they may have, a disability (including an ``invisible disability" such as a learning disability, a chronic health problem, or a mental health condition) that interferes with their performance as a student in this class, they are encouraged to arrange support services and/or accommodations through Disability Services staff. They can be reached at (206) 296-5740. Disability-based adjustments to course expectations can be arranged only through this process.
+	
+	\subsubsection*{Religious Accommodations:} It is the policy of Seattle University to reasonably accommodate students who, due to the observance of religious holidays, expect to be absent or endure a significant hardship during certain days of their academic course or program. Please see, the \href{https://bit.ly/2kCTmnL}{Policy on Religious Accommodations for Students}.
+	\subsubsection*{Community and Inclusivity}
+	Seattle University and the Department of Mathematics are committed to creating and sustaining an inclusive culture that values diversity and works for equity in opportunity and outcomes. Diversity is a core value we espouse as part of our mission.  We respect our students' identities and we strive to create a learning environment where every student feels welcomed and valued. We ask for your help in fostering a welcoming and open environment, treating others with respect, and collaborating toward equity. Please refer to the \href{https://www.seattleu.edu/media/dean-of-students/files/Code-2023-24.pdf}{Student Code of Conduct} and to the \href{https://www.seattleu.edu/diversity/}{Office for Diversity and Inclusion} for more information and guidance. 
+	\subsubsection*{Campus Climate Incident Reporting \& Response Protocol}
+	Seattle U has adopted a Campus Climate Incident Reporting \& Response Protocol to support our commitment to providing an inclusive and nondiscriminatory campus community. If you have seen, heard, or experienced a harmful incident on the basis of one or more of your or another individual’s actual or perceived identities, you may report that incident \href{https://www.seattleu.edu/equity/campus-climate-incidents}{here}. 
+	
+%\newpage
+%\section*{Schedule}
+%** This schedule is preliminary and subject to change**
+%
+%
+%\begin{tabular}{| l | c | p{6cm} | p{3cm}| p{3cm} |}
+%	\hline
+%	Day & Week & Topic & Assigned & Due \\ \hline
+%	Mar 28 & 1 & Welcome and Ch 8: Decision Trees & CH 1 & - \\ \hline
+%	Apr 4 &2 & Ch 8: Decision Trees & CH 2 and WH1 & CH 1 \\ \hline
+%	Apr 11 & 3 & Ch 9: Support Vector Machines & CH 3 &  CH 2 \\ \hline
+%	Apr 18 & 4 & Ch 9: Support Vector Machines & CH 4 and WH 2 & CH 3 \\ \hline
+%	Apr 25 & 5 & Ch 10: Deep Learning & CH 5 &  CH 4\\ \hline
+%	May 2 & 6 & Ch 10: Deep Learning & CH 6 and WH 3 &  CH 5 \\ \hline
+%	May 9 & 7 & Ch 10: Deep Learning & CH 7 & CH 6 and WH 3 \\ \hline
+%	May 16 & 8 & Ch 12: Unsupervised Learning & CH 8 & CH 7 \\ \hline
+%	May 23 & 9 & Ch 12: Unsupervised Learning & CH 9 & CH 8 \\ \hline
+%	May 30 & 10 & Synthesis: Choosing a Method and group work time & Summary Map, Final Project& WH 4\\ \hline
+%	Jun 6 & Finals & Student Presentations & & \\ \hline
+%\end{tabular}
+\end{document}
