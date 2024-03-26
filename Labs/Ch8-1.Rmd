@@ -1,7 +1,7 @@
 ---
 title: "Ch 8 Decision Trees"
-editor_options: 
-  markdown: 
+editor_options:
+  markdown:
     wrap: 72
 ---
 
